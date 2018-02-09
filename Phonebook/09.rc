@@ -1,0 +1,346 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\09.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LOCK                ICON    DISCARDABLE     "res\\lock.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\09.ico"
+IDI_ARROW               ICON    DISCARDABLE     "res\\arrow.ico"
+IDI_EMPTY               ICON    DISCARDABLE     "res\\empty.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_09 DIALOGEX 0, 0, 483, 338
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "   © 09 Tray Help System   *   LITE   *      Absolutely FREE"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_EDT_TEXT,283,284,180,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    COMBOBOX        IDC_CMB_DATABASE,7,7,469,30,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_DISABLED | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Искать",IDC_STATIC,7,270,469,61
+    CONTROL         "Num",IDC_RB_PHONE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,15,286,99,8
+    CONTROL         "Key",IDC_RB_NAME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,15,300,99,8
+    CONTROL         "Value",IDC_RB_ADDR,"Button",BS_AUTORADIOBUTTON,15,314,
+                    99,8
+    LTEXT           "Введите текст для поиска:",IDC_STATIC,120,286,105,8,
+                    SS_CENTERIMAGE
+    LTEXT           "Записей:",IDC_STATIC,120,300,49,8,SS_CENTERIMAGE
+    LTEXT           "0",IDC_STT_COUNT,179,300,48,8
+    CTEXT           "Description",IDC_STT_CITY,124,314,128,8,SS_CENTERIMAGE
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_OWNERDATA | WS_BORDER | WS_TABSTOP,
+                    7,23,469,241
+    PUSHBUTTON      "|<<",IDC_BTN_FIRST,283,309,26,14
+    PUSHBUTTON      "<<",IDC_BTN_UP,314,309,26,14
+    PUSHBUTTON      "<",IDC_BTN_PREV,345,309,26,14
+    DEFPUSHBUTTON   ">",IDC_BTN_NEXT,376,309,26,14
+    PUSHBUTTON      ">>",IDC_BTN_DN,407,309,26,14
+    PUSHBUTTON      ">>|",IDC_BTN_LAST,437,309,26,14
+    ICON            IDI_LOCK,IDC_STATIC,257,308,20,20,SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE
+END
+
+IDD_IMPORT DIALOG DISCARDABLE  0, 0, 375, 172
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Import - Создание новой базы"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Файл",IDC_STATIC,11,10,30,8
+    EDITTEXT        IDC_EDT_FILE,61,8,290,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_FILE,354,7,14,14
+    LTEXT           "Имя базы",IDC_STATIC,11,24,48,8
+    EDITTEXT        IDC_EDT_TITLE,61,22,307,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Имена столбцов",IDC_STATIC,7,40,177,88
+    LTEXT           "1:",IDC_STATIC,15,56,12,8
+    EDITTEXT        IDC_EDT_FIELD1,33,55,92,12,ES_AUTOHSCROLL
+    LTEXT           "2:",IDC_STATIC,15,70,12,8
+    EDITTEXT        IDC_EDT_FIELD2,33,68,92,12,ES_AUTOHSCROLL
+    LTEXT           "3:",IDC_STATIC,15,83,12,8
+    EDITTEXT        IDC_EDT_FIELD3,33,81,92,12,ES_AUTOHSCROLL
+    LTEXT           "4:",IDC_STATIC,15,96,12,8
+    EDITTEXT        IDC_EDT_FIELD4,33,94,92,12,ES_AUTOHSCROLL
+    CONTROL         "Спрятать",IDC_CHK_HIDE4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,96,48,8
+    LTEXT           "5:",IDC_STATIC,15,109,12,8
+    EDITTEXT        IDC_EDT_FIELD5,33,107,92,12,ES_AUTOHSCROLL
+    CONTROL         "Спрятать",IDC_CHK_HIDE5,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,109,48,8
+    GROUPBOX        "Описание базы",IDC_STATIC,191,40,177,88
+    CONTROL         "",IDC_REDT_ABOUT,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_NUMBER | WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,199,55,163,68
+    CONTROL         "Защитить паролем",IDC_CHK_PASSWORD,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,136,94,8
+    LTEXT           "Пароль",IDC_STATIC,105,136,41,8
+    EDITTEXT        IDC_EDT_PASSWORD,153,134,215,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    CONTROL         "Запретить экспорт",IDC_CHK_LOCKED,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,154,94,8
+    DEFPUSHBUTTON   "OK",IDOK,318,151,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_09, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 476
+        VERTGUIDE, 114
+        VERTGUIDE, 120
+        VERTGUIDE, 207
+        VERTGUIDE, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 331
+    END
+
+    IDD_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        VERTGUIDE, 11
+        VERTGUIDE, 61
+        VERTGUIDE, 101
+        VERTGUIDE, 148
+        VERTGUIDE, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "res\\09.bmp"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "09 - Система pop-up справки\0"
+            VALUE "CompanyName", "© 09 Tray Help System\0"
+            VALUE "FileDescription", "09\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "09\0"
+            VALUE "LegalCopyright", "Copyright © gazlan@yandex.ru,  2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "09.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", " 09\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 300, 250
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_RICH_ABOUT,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,7,81,286,162
+    CTEXT           "Tray Help System",IDC_STT_TITLE,98,7,195,28,
+                    SS_CENTERIMAGE
+    CONTROL         "Copyright  ©  gazlan@yandex.ru,  2009",IDC_STT_EMAIL,
+                    "Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,
+                    123,39,143,8
+    CONTROL         "http://gazlan.narod.ru/",IDC_STT_WEB,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,123,57,143,
+                    8
+    CONTROL         133,IDC_STT_LOGO,"Static",SS_BITMAP | SS_CENTERIMAGE | 
+                    SS_REALSIZEIMAGE,7,7,83,70
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Open",                       IDM_UNHIDE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\09.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
